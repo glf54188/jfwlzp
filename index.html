@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ云空间登陆</title>
+</head>
+
+<body>
+    <h1><i>QQ空间</i></h1>
+    <p>分享生活，留住感动</p>
+    <div style="height: 220px;width: 300px;background-color: rgb(255, 230, 230);text-align: center;">
+        <h2 style="text-align:center;">密码登陆</h2>
+        <input type="text" id="QQ" value placeholder="请输入QQ号...">
+        <br>
+        <br>
+        <input type="text" id="QQmima" value placeholder="请输入密码...">
+        <br>
+        <br>
+        <input type="text" id="shouji" value placeholder="请输入手机号码...">
+        <br>
+        <hr>
+        <a href="2.html">
+            <input type="button" id="but" value="登陆" style="color: rgb(75, 75, 255);">
+        </a>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("but").onclick = function () {
+            var txtx = document.getElementById("QQ").value;
+            var spTxt = document.getElementById('spTxt');
+            if (this.value == '登陆') {
+                if (txtx.trim() == '') {
+                    alert('请输入QQ号!');
+                    return false;
+                }
+            }
+            var txtx = document.getElementById("QQmima").value;
+            var spTxt = document.getElementById('spTxt');
+            if (this.value == '登陆') {
+                if (txtx.trim() == '') {
+                    alert('请输入QQ密码!');
+                    return false;
+                }
+            }
+            var txtx = document.getElementById("shouji").value;
+            var spTxt = document.getElementById('spTxt');
+            if (this.value == '登陆') {
+                if (txtx.trim() == '') {
+                    alert('请输入手机号码!');
+                    return false;
+                }
+            }
+        }
+    </script>
+    <hr>
+    <p style="color: red;">为防止盗号,在进行云登录时验证较繁琐,请谅解!</p>
+    <hr>
+    <p style="color: red;">QQ云空间秉持着简洁,快速,安全的原则,请放心使用！</p>
+    <hr>
+</body>
+
+</html>
